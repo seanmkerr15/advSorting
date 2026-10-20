@@ -1,11 +1,11 @@
 # Caffeine Quest reflection
 
-Name:
+Name: Sean Kerr
 
 ## Five questions before coding
 
-1. Purpose:
-2. Inputs and outputs:
+1. **Purpose:** The purpose of the merge sort is to compare the distances of Starbucks locations to find the one closest to the stated latitude and logitude.
+2. **Inputs and outputs:**  
 3. Constraints:
 4. Edge cases:
 5. Test oracle:
@@ -23,7 +23,8 @@ Starting latitude/longitude:
 | Drive-through only | 2 | | |
 | Drive-through only | 3 | | |
 
-What changed, and why would alphabetical order not answer this search?
+**What changed, and why would alphabetical order not answer this search?**
+_We stopped comparing the strings and starting to compare values in order to sort it by distance. Alphabetical order would not answer this search because it would only sort them by the letters of their name and would never give us the one closest._
 
 ## Hand trace: merge [2, 7] and [3, 5]
 
