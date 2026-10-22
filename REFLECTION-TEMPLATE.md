@@ -5,10 +5,10 @@ Name: Sean Kerr
 ## Five questions before coding
 
 1. **Purpose:** The purpose of the merge sort is to compare the distances of Starbucks locations to find the one closest to the stated latitude and logitude.
-2. **Inputs and outputs:**  
-3. Constraints:
-4. Edge cases:
-5. Test oracle:
+2. **Inputs and outputs:**  items is a list that needs to be sorted. Start and end are where the array begins and ends so the sort could work on that area. The list items is changed because the list is being sorted. A list of how many comparisons is returned.
+3. **Constraints:** Both halves are already sorted. You can not use .sort methods.
+4. **Edge cases:** When one half runs out then the half that didn't ran out get's put into the rest of the array. When keys are equal the program just chooses one and puts it in first, doesn't matter.
+5. **Test oracle:** We can test using the demo mode in order to see if the merge sort is correct.
 
 ## Explore Demo mode
 
