@@ -64,11 +64,12 @@ Default-behavior regression check:
 
 ## Algorithm explanation
 
-1. Time complexity and reasoning:
-2. Auxiliary space:
-3. Stability and how my code preserves it:
-4. Why Demo/Student comparison counts may differ:
-5. Why a single short timing is insufficient:
+1. Time complexity and reasoning: The time complexity of the algorithm is O(nlogn) this is because mergeSort is split up in two ways.
+   The first step is separating elements the arrays into their individual arrays and that takes O(logn) time. Then when it comes to sorting and merging the elements back together in an array that takes O(n) time. When you combine them you get O(n*logn).
+3. Auxiliary space: It's auxiliary space is O(n) this is because that for each element in the array a new array including one element is created. Therefore the computer has to store these elements somewhere in order to sort and merge them back so it must do for for each element in the array.
+4. Stability and how my code preserves it: Stability is ensuring that two elements of equal value will be put into the array in the order they appeared. The code preserves this because the left-most array goes first and so the elements of equal value will be sorted into the order they appeared because the element that appeared first would be in the left-most array.
+5. Why Demo/Student comparison counts may differ: The demo version used a sorting algorithm that did not have to rely on ram as much as the student sorting algorithm did. The merge sort may have been slower because it would have required more ram to complete it faster.
+6. Why a single short timing is insufficient: The speed of a recursive algorithm depends on the ram. It cannot be determined based off o f a single short-timing because the timing will be inconsistent across multiple devices based on the level of ram available to the algorithm.
 
 ## Demonstration checklist
 
